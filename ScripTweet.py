@@ -9,10 +9,10 @@ import tweepy
 import time
 from autoscraper import AutoScraper
 
-CONSUMER_KEY = 'tyHCivCLoZK7TG9WRzwGdhGiC'
-CONSUMER_SECRET = 'cBvYPDY1ybqEjYP0Hz4tqmayVaUqs45OxbdMDdYJboFFNQShNe'
-ACCESS_KEY = '969633595454316545-Jl9nv3MyDMGDzFATh1CaNJvvCBN8mJ7'
-ACCESS_SECRET = 'iZV3U55LWJyxbfnvDfwb5Gz7yjTVyzv0BJQPOJEdGU9tr'
+CONSUMER_KEY = ''
+CONSUMER_SECRET = ''
+ACCESS_KEY = ''
+ACCESS_SECRET = ''
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 
