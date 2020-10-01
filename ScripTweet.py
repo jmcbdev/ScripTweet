@@ -9,10 +9,17 @@ import tweepy
 import time
 import random
 
+<<<<<<< HEAD
 CONSUMER_KEY = 'API key' #replace with key
 CONSUMER_SECRET = 'Secret key' #replace with key
 ACCESS_KEY = 'Access Token' #replace with token
 ACCESS_SECRET = 'Access token secret'#replace with token
+=======
+CONSUMER_KEY = ''
+CONSUMER_SECRET = ''
+ACCESS_KEY = ''
+ACCESS_SECRET = ''
+>>>>>>> 28313c327a85424c863a56b0e0458419233b9851
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 
