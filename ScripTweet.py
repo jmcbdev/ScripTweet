@@ -9,7 +9,6 @@ import tweepy
 import time
 import random
 
-
 CONSUMER_KEY = 'API key' #replace with key
 CONSUMER_SECRET = 'Secret key' #replace with key
 ACCESS_KEY = 'Access Token' #replace with token
