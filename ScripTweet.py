@@ -7,23 +7,23 @@
 
 import tweepy
 import time
-from autoscraper import AutoScraper
+import random
 
-CONSUMER_KEY = 'tyHCivCLoZK7TG9WRzwGdhGiC'
-CONSUMER_SECRET = 'cBvYPDY1ybqEjYP0Hz4tqmayVaUqs45OxbdMDdYJboFFNQShNe'
-ACCESS_KEY = '969633595454316545-Jl9nv3MyDMGDzFATh1CaNJvvCBN8mJ7'
-ACCESS_SECRET = 'iZV3U55LWJyxbfnvDfwb5Gz7yjTVyzv0BJQPOJEdGU9tr'
+CONSUMER_KEY = 'API key' #replace with key
+CONSUMER_SECRET = 'Secret key' #replace with key
+ACCESS_KEY = 'Access Token' #replace with token
+ACCESS_SECRET = 'Access token secret'#replace with token
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 
 #create api object
 twitter_API = tweepy.API(auth)
 
-url = 'https://www.biblestudytools.com/topical-verses/the-25-most-read-bible-verses/'
+# Open text file with the text you want to tweet
+with open("/Users/kudakadira/github/ScripTweet/scriptures.txt", "r") as file:
+    data = file.readlines()
 
-wanted_list = ["Philippians 4:13:"]
-
-scraper = AutoScraper()
-result = scraper.build(url, wanted_list)
-print(result)
+# Print one random line (scripture) everytime the program runs
+for x in range(1):
+	twitter_API.update_status(data[random.randint(0, len(data))])
 # twitter_API.update_status("Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. - Philippians 4:6")
