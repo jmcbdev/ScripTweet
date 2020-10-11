@@ -20,7 +20,7 @@ auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 twitter_API = tweepy.API(auth)
 
 # Open text file with the text you want to tweet
-with open("/Users/kudakadira/github/ScripTweet/scriptures.txt", "r") as file:
+with open("scriptures.txt", "r") as file:
     data = file.readlines()
 
 # Print one random line (scripture) everytime the program runs
